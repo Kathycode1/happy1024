@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>^o^</title>
+    <title>happy1024</title>
     <style>
         body {
             background-color: #f2f2f2;
@@ -17,27 +17,45 @@
             position: fixed;
             bottom: 0;
             left: 0;
+            font-size: 2px;
             padding-left: 10px;
         }
     </style>
-    <script>
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
-
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "F12") {
-                event.preventDefault();
-            }
-        });
-    </script>
 </head>
 <body>
-    <h1>泥嚎！</h1>
-    <p>这个世界上只有十种人，一种是懂二进制的，一种是不懂二进制的。</p>
+<h1>泥嚎！</h1>
+<p>这个世界上只有十种人，一种是懂二进制的，一种是不懂二进制的。</p>
 
-    <img src="stego_image.png" width="300px">
-    <p class="semi-hidden-text">4444444464 4444444444 64644464 446464 4464644464 4444446464 64644464 44644464 4444646464 4464644464 4444446464 6464444444 4444446464 6464444444 4464644464 6464646444 64 4444446464 4464646464 4464644464 6464646444 64644464 4464646464 4444444444 4464644464 4464646464 4444444444 4444444444 64 4464644464 6464646444 64 6464646444 4444446464 4464644464 4444446464 64644464 446464 4444446464 4464644464 6464646464 4444646464 6464444444 4444446464 4464644464 6464646464 4444444444 6464646464 6444 4464644464 4444444464 4444446464 4444444464 4444446464 4464644464 6464646464 6464646444 6464646444 4444444444</p>
+<a href="768366.png" download="768366.png">
+<img src="768366.png" width="300px" alt="点击下载图片" id="image">
+</a>
 
+<script>
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "F12") {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.key === 'u') {
+            event.preventDefault();
+        }
+    });
+
+    // document.getElementById('image').addEventListener('click', function() {
+    //     const link = document.createElement('a');
+    //     link.href = '768366.png'; // 图片文件路径
+    //     link.download = '768366.png'; // 下载时的文件名
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // });
+</script>
+
+<p class="semi-hidden-text">4444444464 4444444444 64644464 446464 4464644464 4444446464 64644464 44644464 4444646464 4464644464 4444446464 6464444444 4444446464 6464444444 4464644464 6464646444 64 4444446464 4464646464 4464644464 6464646444 64644464 4464646464 4444444444 4464644464 4464646464 4444444444 4444444444 64 4464644464 6464646444 64 6464646444 4444446464 4464644464 4444446464 64644464 446464 4444446464 4464644464 6464646464 4444646464 6464444444 4444446464 4464644464 6464646464 4444444444 6464646464 6444 4464644464 4444444464 4444446464 4444444464 4444446464 4464644464 6464646464 6464646444 6464646444 4444444444</p>
 </body>
 </html>
